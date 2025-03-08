@@ -1,3 +1,15 @@
 body {
-    Background-color: #D8E0F4;
+    Background-color: var(--highlight-color);
+    font-family: :var(--primary-font);
+}
+
+:root {
+    --primary-color: #294B6E;
+    --secondary-color: #D8E0F4;
+    --neutral-color: #4A2A1D;
+    --highlight-color: #75768C;
+    --text-color: #151112;
+    --blank: #D8E0F4;
+    --primary-font: "Rubik Mono One", monospace;
+    --secondary-font: "Open Sans", sans-serif;
 }
