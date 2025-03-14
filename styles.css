@@ -13,3 +13,7 @@ body {
     --primary-font: "Rubik Mono One", monospace;
     --secondary-font: "Open Sans", sans-serif;
 }
+
+p, a, li {
+    font-family: var(--secondary-font);
+}
