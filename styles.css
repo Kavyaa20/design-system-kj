@@ -1,6 +1,7 @@
 body {
-    Background-color: var(--highlight-color);
+    Background-color: var(--secondary-color);
     font-family: var(--primary-font);
+    font-size: 16px;
 }
 
 :root {
@@ -16,4 +17,31 @@ body {
 
 p, a, li {
     font-family: var(--secondary-font);
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+
+p.italics {
+    font-style: italics;
+}
+
+.emphasized{
+   font-weight: 800; 
+
+}
+
+.btn {
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+}
+
+.btn-primary {
+    background-color: var(--neutral-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight-color);
+    border-color: var(--primary-color);
 }
