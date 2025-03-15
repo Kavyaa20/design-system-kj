@@ -17,6 +17,33 @@
 </head>
 
 <body>
+    <!-- Sheero Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-sheero">
+        <div class="container-fluid">
+            <a class="navbar-brand emphasized" href="#">🐶 Sheero's Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Sheero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pawducts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <h1 class="emphasized" style="font-size: 2rem;">Sheero Design Component System</h1>
         <h2> by Kavya Jayaprakash </h2>
@@ -78,7 +105,133 @@
                     <button type="button" class="btn btn-outline-warning">Warning</button>
                 </div>
             </div>
+            <!-- Forms & Inputs -->
+            <div class="row">
+                <div class="col">
+                    <h2>3. Forms & Inputs</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Text Input</h3>
+                    <input type="text" class="form-control" placeholder="Enter text here">
+                </div>
+                <div class="col-md-6">
+                    <h3>Select Dropdown</h3>
+                    <select class="form-select">
+                        <option selected>Choose an option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <h3>Checkboxes</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1">
+                        <label class="form-check-label" for="check1">Check this box</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check2">
+                        <label class="form-check-label" for="check2">Another option</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Radio Buttons</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio1">
+                        <label class="form-check-label" for="radio1">Option 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio2">
+                        <label class="form-check-label" for="radio2">Option 2</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <h3>Textarea</h3>
+                    <textarea class="form-control" rows="4" placeholder="Write something..."></textarea>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <h3>Input Group</h3>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- 🐶 Sheero's Components: Cards, Alerts & Badges -->
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2>4. Cards, Alerts & Badges</h2>
+            </div>
+        </div>
+
+        <!-- Card Component -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card sheero-card">
+                    <div class="card-header">🐾 Featured Pawfile</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Meet Sheero!</h5>
+                        <p class="card-text">Sheero is a playful pup who loves belly rubs and treats. Always ready for
+                            an adventure!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer">Updated: Just now</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card sheero-card">
+                    <div class="card-header">🐕 Training Tips</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sheero’s Pro Tips</h5>
+                        <p class="card-text">Consistency is key! Train your pup with positive reinforcement for the best
+                            results.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                    <div class="card-footer">Updated: 1 hour ago</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="alert alert-primary" role="alert">
+                    🐶 Sheero Says: "Stay pawsitive and keep wagging!"
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-warning" role="alert">
+                    ⚠️ Warning: Too much tail wagging can cause zoomies!
+                </div>
+            </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="row mt-3">
+            <div class="col">
+                <h3>Achievement Badges</h3>
+                <span class="badge bg-primary">Top Dog</span>
+                <span class="badge bg-success">Best Behaved</span>
+                <span class="badge bg-warning">Snack Lover</span>
+                <span class="badge bg-danger">Zoomies Champion</span>
+            </div>
+        </div>
+
     </div>
 
 

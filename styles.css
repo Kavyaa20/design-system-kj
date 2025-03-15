@@ -45,3 +45,73 @@ p.italics {
     background-color: var(--highlight-color);
     border-color: var(--primary-color);
 }
+
+/*  Sheero Navbar Styling */
+.navbar-sheero {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.navbar-sheero .navbar-brand {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.navbar-sheero .nav-link {
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    color: var(--blank);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-sheero .nav-link:hover {
+    color: var(--highlight-color);
+}
+
+.navbar-sheero .nav-link.active {
+    font-weight: bold;
+    color: var(--neutral-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Sheero Cards */
+.sheero-card {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sheero-card .card-header {
+    background-color: var(--primary-color);
+    color: var(--blank);
+    font-weight: bold;
+}
+
+.sheero-card .card-footer {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+/* Alerts */
+.alert {
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+/* Badges */
+.badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 5px;
+    border-radius: 20px;
+}
