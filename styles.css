@@ -115,3 +115,12 @@ p.italics {
     margin-right: 5px;
     border-radius: 20px;
 }
+
+#carouselExample {
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+#carouselExample .carousel-item img {
+    border-radius: 15px; 
+}
