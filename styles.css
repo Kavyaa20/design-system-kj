@@ -183,3 +183,17 @@ footer {
     border: 2px solid #FF7043; /* Orange border */
 }
 
+/* Removing the close icon and center aligning the content */
+.modal-header .btn-close {
+    display: none; /* Hide the default close icon */
+}
+
+.modal-header {
+    border-bottom: none;
+    text-align: center; /* Center-align the header */
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center; /* Center-align the close button */
+}
