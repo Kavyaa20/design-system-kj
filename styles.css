@@ -48,13 +48,42 @@ p.italics {
     border-color: var(--primary-color);
 }
 
+/* Fun and modern popup design */
 .modal-content {
-    background-color: #FF7043;
+    background-color: #FF7043; /* Fun orange background */
+    color: white;
+    border-radius: 15px; /* Rounded corners for a modern look */
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Centering the text */
+.modal-body {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+/* Close button style */
+.btn-close {
+    background-color: transparent;
+    border: none;
     color: white;
 }
 
-.modal-header, .modal-body, .modal-footer {
-    background-color: #FF7043;
+/* Make the bold text even more fun and eye-catching */
+.modal-body strong {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for bold text */
 }
 
 /* Sheero Navbar Styling */
