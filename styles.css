@@ -198,47 +198,44 @@ footer {
     justify-content: center; /* Center-align the close button */
 }
 
-/* Custom Styling for the Range Slider */
-.form-range {
-    -webkit-appearance: none; /* Remove default styles */
-    appearance: none;
-    width: 100%; /* Full width */
-    height: 8px; /* Line height */
-    background: #D15C4B; /* Darker orange scale line */
-    border-radius: 5px; /* Rounded line */
-    outline: none;
-    transition: background 0.3s ease;
+/* Container for Image Slider and Stories Section */
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Styling the slider dot (thumb) */
-.form-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FF7043; /* Orange color for the dot */
-    cursor: pointer;
-    border: none;
+/* Left Section: Image Slider */
+#carouselExample {
+    width: 100%;
 }
 
-/* For Firefox */
-.form-range::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FF7043; /* Orange color for the dot */
-    border: none;
-    cursor: pointer;
+/* Right Section: Stories Carousel */
+#storiesCarousel {
+    width: 100%;
 }
 
-/* For IE */
-.form-range::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FF7043; /* Orange color for the dot */
-    border: none;
-    cursor: pointer;
+/* Card Styling for Stories */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
