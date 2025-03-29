@@ -127,3 +127,29 @@ footer {
     margin-right: 10px;
     border-radius: 20px;
 }
+
+/* Input Text Box Border */
+.form-control {
+    border: 2px solid #FF7043; /* Orange border */
+}
+
+/* Select Dropdown Border */
+.form-select {
+    border: 2px solid #FF7043; /* Orange border */
+}
+
+/* Checkbox Border (Square) */
+.form-check-input {
+    border: 2px solid #FF7043; /* Orange border */
+    border-radius: 0; /* Square shape */
+}
+
+/* Radio Button Border (Circle) */
+.form-check-input:checked[type="radio"] {
+    border: 2px solid #FF7043; /* Orange border */
+}
+
+.form-check-input[type="radio"] {
+    border-radius: 50%; /* Circle shape */
+    border: 2px solid #FF7043; /* Orange border */
+}
