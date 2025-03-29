@@ -1,16 +1,16 @@
 body {
-    Background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
     font-family: var(--primary-font);
     font-size: 16px;
 }
 
 :root {
-    --primary-color: #294B6E;
-    --secondary-color: #D8E0F4;
-    --neutral-color: #4A2A1D;
-    --highlight-color: #75768C;
-    --text-color: #151112;
-    --blank: #D8E0F4;
+    --primary-color: #FF6347; /* Sheero's playful color */
+    --secondary-color: #F2D1B3; /* Sheero's light tone */
+    --highlight-color: #8B4513; /* Clever & intelligent accent */
+    --neutral-color: #2F4F4F; /* Moody color */
+    --text-color: #1D1B1B;
+    --blank: #FFFFFF;
     --primary-font: "Rubik Mono One", monospace;
     --secondary-font: "Open Sans", sans-serif;
 }
@@ -22,12 +22,12 @@ p, a, li {
 }
 
 p.italics {
-    font-style: italics;
+    font-style: italic;
 }
 
-.emphasized{
-   font-weight: 800; 
-
+.emphasized {
+    font-weight: 800;
+    color: var(--highlight-color);
 }
 
 .btn {
@@ -37,8 +37,8 @@ p.italics {
 }
 
 .btn-primary {
-    background-color: var(--neutral-color);
-    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--neutral-color);
 }
 
 .btn-primary:hover {
@@ -46,7 +46,7 @@ p.italics {
     border-color: var(--primary-color);
 }
 
-/*  Sheero Navbar Styling */
+/* Sheero Navbar Styling */
 .navbar-sheero {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -55,7 +55,7 @@ p.italics {
 .navbar-sheero .navbar-brand {
     font-family: var(--primary-font);
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--blank);
 }
 
 .navbar-sheero .nav-link {
@@ -74,53 +74,35 @@ p.italics {
     color: var(--neutral-color);
 }
 
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-/* Sheero Cards */
+/* Card Styling */
 .sheero-card {
-    background-color: var(--secondary-color);
+    background-color: var(--blank);
     border: 2px solid var(--primary-color);
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.sheero-card .card-header {
-    background-color: var(--primary-color);
-    color: var(--blank);
-    font-weight: bold;
+/* Carousel Styling */
+#carouselExample {
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.sheero-card .card-footer {
-    background-color: var(--highlight-color);
-    color: white;
+#carouselExample .carousel-item img {
+    border-radius: 15px;
 }
 
-/* Alerts */
+/* Alert Styling */
 .alert {
     font-family: var(--secondary-font);
     font-size: 1.1rem;
     border-radius: 10px;
 }
 
-/* Badges */
+/* Badge Styling */
 .badge {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     margin-right: 5px;
     border-radius: 20px;
-}
-
-#carouselExample {
-    border-radius: 15px; 
-    overflow: hidden; 
-}
-
-#carouselExample .carousel-item img {
-    border-radius: 15px; 
 }
