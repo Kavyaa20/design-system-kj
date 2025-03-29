@@ -1,15 +1,16 @@
 body {
-    background-color: var(--secondary-color);
+    background-color: #f5f5f5;
     font-family: var(--primary-font);
     font-size: 16px;
+    padding-top: 50px;
 }
 
 :root {
-    --primary-color: #FF6347; /* Sheero's playful color */
-    --secondary-color: #F2D1B3; /* Sheero's light tone */
-    --highlight-color: #8B4513; /* Clever & intelligent accent */
-    --neutral-color: #2F4F4F; /* Moody color */
-    --text-color: #1D1B1B;
+    --primary-color: #FF7043; /* Brighter Orange */
+    --secondary-color: #FFF8E1; /* Light and fun background */
+    --highlight-color: #2C3E50; /* Strong, intelligent accent */
+    --neutral-color: #34495E; /* Classic mood */
+    --text-color: #2C3E50;
     --blank: #FFFFFF;
     --primary-font: "Rubik Mono One", monospace;
     --secondary-font: "Open Sans", sans-serif;
@@ -28,6 +29,7 @@ p.italics {
 .emphasized {
     font-weight: 800;
     color: var(--highlight-color);
+    text-align: center;
 }
 
 .btn {
@@ -44,6 +46,15 @@ p.italics {
 .btn-primary:hover {
     background-color: var(--highlight-color);
     border-color: var(--primary-color);
+}
+
+.modal-content {
+    background-color: #FF7043;
+    color: white;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background-color: #FF7043;
 }
 
 /* Sheero Navbar Styling */
@@ -82,6 +93,15 @@ p.italics {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.sheero-card .card-body {
+    padding: 20px;
+}
+
+.sheero-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
 /* Carousel Styling */
 #carouselExample {
     border-radius: 15px;
@@ -92,17 +112,18 @@ p.italics {
     border-radius: 15px;
 }
 
-/* Alert Styling */
-.alert {
-    font-family: var(--secondary-font);
-    font-size: 1.1rem;
-    border-radius: 10px;
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--blank);
+    font-size: 0.9rem;
 }
 
 /* Badge Styling */
 .badge {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 20px;
 }
