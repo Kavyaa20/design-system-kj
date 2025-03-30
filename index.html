@@ -60,22 +60,23 @@
             to know Sheero's birthday</button>
 
         <!-- Modal for Sheero's Birthday -->
-<div class="modal fade" id="birthdayModal" tabindex="-1" aria-labelledby="birthdayModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content text-center"> <!-- Center align content -->
-            <div class="modal-header justify-content-center">
-                <h5 class="modal-title" id="birthdayModalLabel">Sheero's Birthday</h5>
-            </div>
-            <div class="modal-body">
-                Sheero's birthday is on<br>
-                <strong>25th April 2018! 🎉</strong> <!-- Bold the date -->
-            </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal fade" id="birthdayModal" tabindex="-1" aria-labelledby="birthdayModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-center"> <!-- Center align content -->
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title" id="birthdayModalLabel">Sheero's Birthday</h5>
+                    </div>
+                    <div class="modal-body">
+                        Sheero's birthday is on<br>
+                        <strong>25th April 2018! 🎉</strong> <!-- Bold the date -->
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
 
 
@@ -94,7 +95,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Paragraphs</h3>
-                <p>Paragraphs11 in the Sheero Design System are not just concise but full of personality—warm, engaging,
+                <p>Paragraphs in the Sheero Design System are not just concise but full of personality—warm, engaging,
                     and infused with the playful spirit of Sheero. The language we use mirrors Sheero’s lovable and
                     mischievous character, making every piece of content feel approachable and fun. Whether it’s a
                     friendly greeting, a helpful tip, or an exciting announcement, each paragraph is crafted to bring
@@ -181,6 +182,26 @@
             </div>
         </div>
 
+        <!-- Updated Range Slider Code -->
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h3>Range Slider</h3>
+
+                <input type="range" class="form-range" id="customRange" min="0" max="100" step="1" value="50">
+                <label for="customRange" class="form-label">Value: <span id="rangeValue">50</span></label>
+            </div>
+        </div>
+
+        <script>
+            const rangeInput = document.getElementById('customRange');
+            const rangeValue = document.getElementById('rangeValue');
+
+            rangeInput.addEventListener('input', function () {
+                rangeValue.textContent = rangeInput.value;
+            });
+        </script>
+
+
         <!-- Cards Section -->
         <div id="cards" class="row mt-5">
             <div class="col">
@@ -193,7 +214,8 @@
                             <img src="images/Dog4.png" class="card-img-top" alt="dog1">
                             <div class="card-body">
                                 <h5 class="card-title">Ghibli Sheero</h5>
-                                <p class="card-text"> Who says Ghibli magic is only for humans? Sheero’s following the trend, with a tail full of whimsy and paws full of adventure.</p>
+                                <p class="card-text"> Who says Ghibli magic is only for humans? Sheero’s following the
+                                    trend, with a tail full of whimsy and paws full of adventure.</p>
                                 <a href="#" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
@@ -249,91 +271,104 @@
         </div>
 
 
-       <!-- Image Slider and Sheero's Stories Section -->
-<div class="container mt-5" id="carousel">
-    <div class="row">
-        <!-- Left Section: Image Slider -->
-        <div class="col-md-6">
-            <h2>Sheero's Image Slider</h2>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/DogA.png" class="d-block w-100" alt="DogA">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Sheero loves cats</h5>
+        <!-- Image Slider and Sheero's Stories Section -->
+        <div class="container mt-5" id="carousel">
+            <div class="row">
+                <!-- Left Section: Image Slider -->
+                <div class="col-md-6">
+                    <h2>Sheero's Image Slider</h2>
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/DogA.png" class="d-block w-100" alt="DogA">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Sheero loves cats</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/DogB.png" class="d-block w-100" alt="DogB">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Play Time</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/DogC.png" class="d-block w-100" alt="DogC">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nap Time with Sheero</h5>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/DogB.png" class="d-block w-100" alt="DogB">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Play Time</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/DogC.png" class="d-block w-100" alt="DogC">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Nap Time with Sheero</h5>
-                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
 
-        <!-- Right Section: Sheero's Stories as a Carousel -->
-        <div class="col-md-6">
-            <h2>Stories About Sheero</h2>
-            <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Story 1 -->
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Grandma’s Little Shadow</h5>
-                                <p class="card-text">Sheero is absolutely obsessed with his grandma. He’s her loyal sidekick, following her from room to room like a furry little shadow. But his favorite spot? Sitting beside her while she cooks, hoping to snag some veggies off the chopping board! 🍅🥕</p>
+                <!-- Right Section: Sheero's Stories as a Carousel -->
+                <div class="col-md-6">
+                    <h2>Stories About Sheero</h2>
+                    <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Story 1 -->
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Grandma’s Little Shadow</h5>
+                                        <p class="card-text">Sheero is absolutely obsessed with his grandma. He’s her
+                                            loyal sidekick, following her from room to room like a furry little shadow.
+                                            But his favorite spot? Sitting beside her while she cooks, hoping to snag
+                                            some veggies off the chopping board! 🍅🥕</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Story 2 -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Birthday Party Besties</h5>
+                                        <p class="card-text">Meet Leo, Sheero’s neighbor and BFF! These two are
+                                            inseparable and celebrate their birthdays together every year. Cake, toys,
+                                            and lots of tail wagging—Sheero and Leo know how to throw a birthday bash!
+                                            🎉🐾</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Story 3 -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Monthly Spa Day</h5>
+                                        <p class="card-text">Once a month, Sheero gets pampered like the superstar he
+                                            is! Shyam Uncle rolls up in his van, and Sheero hops right in, ready for a
+                                            relaxing day of grooming and spa treatments. He's living his best life! 💅🚗
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Story 2 -->
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Birthday Party Besties</h5>
-                                <p class="card-text">Meet Leo, Sheero’s neighbor and BFF! These two are inseparable and celebrate their birthdays together every year. Cake, toys, and lots of tail wagging—Sheero and Leo know how to throw a birthday bash! 🎉🐾</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Story 3 -->
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Monthly Spa Day</h5>
-                                <p class="card-text">Once a month, Sheero gets pampered like the superstar he is! Shyam Uncle rolls up in his van, and Sheero hops right in, ready for a relaxing day of grooming and spa treatments. He's living his best life! 💅🚗</p>
-                            </div>
-                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#storiesCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#storiesCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#storiesCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#storiesCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-    </div>
-</div>
 
 
 
@@ -350,4 +385,3 @@
 </body>
 
 </html>
-
