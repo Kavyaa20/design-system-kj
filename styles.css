@@ -239,3 +239,46 @@ footer {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+/* Custom Styling for the Range Slider */
+.form-range {
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none;
+    width: 100%; /* Full width */
+    height: 8px; /* Line height */
+    background: #D15C4B; /* Darker orange scale line */
+    border-radius: 5px; /* Rounded line */
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+/* Styling the slider dot (thumb) */
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF7043; /* Orange color for the dot */
+    cursor: pointer;
+    border: none;
+}
+
+/* For Firefox */
+.form-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF7043; /* Orange color for the dot */
+    border: none;
+    cursor: pointer;
+}
+
+/* For IE */
+.form-range::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF7043; /* Orange color for the dot */
+    border: none;
+    cursor: pointer;
+}
