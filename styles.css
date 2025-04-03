@@ -145,7 +145,7 @@ p.italics {
 footer {
     background-color: var(--primary-color);
     padding: 15px;
-    color: var(--blank);
+    color: white;
     font-size: 0.9rem;
 }
 
